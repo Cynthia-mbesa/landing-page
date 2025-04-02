@@ -8,10 +8,6 @@ Welcome to my personal landing page! This page showcases my services as a remote
 - [Project Features](#Project-Features)
 - [Tech Stack](#tech-stack)
 - [File Structure](#file-structure)
-- [How to Use](#how-to-use)
-- [Installation](#installation)
-- [Customization](#customization)
-- [License](#license)
 
 ## Overview
 
@@ -46,4 +42,10 @@ This project is built using **HTML** and **CSS** with the following key technolo
 
 The project follows a simple file structure:
 
+```
+/data-analyst-web-developer-landing-page
 
+│
+├── index.html     # The main HTML file with the structure of the page.
+├── styles.css     # External CSS file containing all styles.
+└── README.md      # Project documentation for setup and usage.
