@@ -1,0 +1,197 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #ff5722;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: #e64a19;
+}
+
+/* About Section with Wavy Border */
+#about {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Wavy Effect */
+#about::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  clip-path: polygon(0 100%, 100% 70%, 100% 100%, 0 80%);
+  z-index: -1;
+}
+
+/* Services Section with Wavy Border */
+#services {
+  padding: 50px;
+  background-color: #f4f4f4;
+  position: relative;
+  z-index: 1;
+}
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Wavy Effect */
+#services::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: #f4f4f4;
+  clip-path: polygon(0 100%, 100% 70%, 100% 100%, 0 80%);
+  z-index: -1;
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact label {
+  margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #00f2fe;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+footer a {
+  color: #ff5722;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
