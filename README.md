@@ -4,8 +4,8 @@ Welcome to my personal landing page! This page showcases my services as a remote
 
 ## Table of Contents
 
-- [Overview]
-- [Project Features]
+- [Overview] (#Overview)
+- [Project Features] (#Project Features)
 - [Tech Stack](#tech-stack)
 - [File Structure](#file-structure)
 - [How to Use](#how-to-use)
