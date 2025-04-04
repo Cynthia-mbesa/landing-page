@@ -133,19 +133,40 @@ nav ul li a:hover {
 }
 
 /* ===== Contact Section ===== */
-.contact {
-    padding: 60px 15px;
+#contact {
+  padding: 50px;
+  background-color: linear-gradient(to bottom, #0a0a23, #003366); /* Dark gradient */
 }
 
-.contact a {
-    text-decoration: none;
-    color: #ffcc00;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+#contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.contact a:hover {
-    color: #ffa500;
+#contact label {
+  margin-bottom: 5px;
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px;
+  background-color: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #00f2fe;
 }
 
 /* ===== Footer ===== */
