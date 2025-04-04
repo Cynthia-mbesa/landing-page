@@ -1,138 +1,170 @@
-/* General Reset */
+/* Reset & General Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #007BFF;
-  color: white;
-  line-height: 1.6;
+    background: linear-gradient(to bottom, #0a0a23, #003366); /* Dark gradient */
+    color: white;
+    text-align: center;
 }
 
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #004a99;
-  padding: 1rem 2rem;
+/* ===== Navigation Bar ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
+nav ul li {
+    display: inline;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Hero */
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* ===== Hero Section ===== */
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
+    padding: 100px 20px;
 }
 
-.cta-button {
-  background-color: #ffffff;
-  color: #007BFF;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  margin-top: 1rem;
-  display: inline-block;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-.cta-button:hover {
-  background-color: #e2e2e2;
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
 
-/* Wavy Section */
-.wavy-section {
-  position: relative;
-  padding: 4rem 2rem;
-  background-color: white;
-  color: #333;
-  transition: transform 0.3s ease;
+.hero a {
+    display: inline-block;
+    background: #ffcc00;
+    color: #333;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
 }
 
-.wavy-section:hover {
-  transform: scale(1.02);
+.hero a:hover {
+    background: #ffa500;
 }
 
-.content-box {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+/* ===== Wavy Sections ===== */
+.wave-container {
+    position: relative;
+    background: #fff;
+    color: #333;
+    padding: 80px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    width: 90%;
 }
 
-.wave-bottom {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23007BFF" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,202.7C384,213,480,171,576,138.7C672,107,768,85,864,101.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"/></svg>') no-repeat;
-  background-size: cover;
-  pointer-events: none;
+.wave-container::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url('https://www.heropatterns.com/img/wave.svg') repeat-x;
 }
 
-/* Contact Section */
-.contact-section {
-  padding: 4rem 2rem;
-  background-color: #004a99;
-  text-align: center;
+.wave-container::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: url('https://www.heropatterns.com/img/wave.svg') repeat-x;
 }
 
-.contact-section input,
-.contact-section textarea {
-  width: 80%;
-  max-width: 500px;
-  padding: 0.75rem;
-  margin: 0.5rem 0;
-  border: none;
-  border-radius: 5px;
+/* ===== Hover Effect for Sections ===== */
+.wave-container:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
 }
 
-.contact-section button {
-  padding: 0.75rem 2rem;
-  background-color: #ffffff;
-  color: #004a99;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* ===== Services Section Styling ===== */
+.services ul {
+    list-style: none;
+    padding: 0;
 }
 
-.contact-section button:hover {
-  background-color: #e2e2e2;
+.services ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
 }
 
-/* Footer */
+/* ===== Testimonials Section Styling ===== */
+.testimonials {
+    font-style: italic;
+}
+
+/* ===== Contact Section ===== */
+.contact {
+    padding: 60px 15px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact a:hover {
+    color: #ffa500;
+}
+
+/* ===== Footer ===== */
 footer {
-  padding: 2rem;
-  text-align: center;
-  background-color: #00264d;
-  color: white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 footer a {
-  color: #aadfff;
-  text-decoration: none;
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: bold;
 }
 
 footer a:hover {
-  text-decoration: underline;
+    color: #ffa500;
 }
